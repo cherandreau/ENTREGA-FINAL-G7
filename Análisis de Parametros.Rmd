@@ -1,51 +1,53 @@
 ---
-title: Informe de Análisis de Parámetros de Well Testing utilizando Herramientas de R
+title: TRABAJO FINAL M3  - GRUPO 7 
 author:
-  - name: Jairo Sebastián Quiroga
-    affil: UNSa,2,\ddagger,*
-    orcid: 0000-0000-0000-0000
   - name: Germaine Andreau
-    affil: UNLP,2, \dagger, \ddagger
+    affil: 1,2,3\ddagger,*
+    orcid: 0000-0000-0000-0000
+  - name: Angeles Chocala
+    affil: 2, \dagger, \ddagger
+  - name: Daniela Verónica Marquez
+    affil: 3, \dagger, \ddagger
+  - name: Jairo 
+    affil: 3, \dagger, \ddagger
+  - name: Marcelo Gomez
+    affil: 3, \dagger, \ddagger
+  - name: Facundo Chancel
+    affil: 3, \dagger, \ddagger
+  - name: Bruno Nicolás Chaves
+    affil: 3, \dagger, \ddagger
+
+
 affiliation:
   - num: 1
     address: |
-      Universidad Nacional de la Patagonia Austral - 
-      Unidad Académica Caleta Oliva - Diplomatura Universitaria en Gestión y Tecnologías para el desarrollo Convencional y No Convencional de Hidrocarburos.
-      Ruta Nacional 3, Z9011 Caleta Olivia, Santa Cruz - Argentina
-    Telefono: 0297 485-4888
+      Universidad Nacional de la Patagonia Austral 
+      Unidad Académica Caleta Olivia, Diplomatura en Hidrocarburos
+      Santa Cruz , Argentina
   - num: 2
-    address: |
-      Universidad Nacional de Salta
-      Facultad Regional Multidisciplinar Tartagal - Ingenieria en Perforaciones.
-      Ejército Argentino, A4560 Tartagal, Salta - Argentina
-    Telefono: 03873 42-1182
+     email: cherandreau@gmail.com
 # author citation list in chicago format
 authorcitation: |
   Leutnant, D.; Doe, J.
 # firstnote to eighthnote
 firstnote: |
-  Actividad: *Informe Final del Modulo III de la diplomatura de Hidrocarburos.*
+  Current address: Chubut, Argentina.
 secondnote: |
-  Trabajo con datos reales y con interpretaciones, con el unico objetivo de culminar un informe final academico.
+  These authors contributed equally to this work.
 correspondence: |
-  jairosq91@gmail.com; Tel.: 3873-401123.
+ cherandreau@gmail.com ; Tel.: +54-221-3640327.
 # document options
 journal: notspecified
 type: article
 status: submit
 # front matter
 simplesummary: |
-  Este trabajo aborda el análisis de parametros en una operacion de well testing.
+  El siguiente trabajo es el producto de la finalización del tercer módulo de la Diplomatura de Hidrocarburos de la UNPA.
 abstract: |
-  Resumen del trabajo
   A single paragraph of about 200 words maximum. For research articles, 
   abstracts should give a pertinent overview of the work. We strongly encourage
   authors to use the following style of structured abstracts, but without 
-  headings: 1) Introducción: Place the question addressed in a broad context and
-  highlight the purpose of the study; 2) Consideraciones a tener en cuenta: Describe briefly the main methods or treatments applied; 3) Resultados / caso de estudio: Summarize the article's main findings; and 4) Discusion Final y Conclusion: Indicate the main conclusions or interpretations. 
-  The abstract should be an objective representation of the article, it must not 
-  contain results which are not presented and substantiated in the main text and 
-  should not exaggerate the main conclusions.
+  headings: 1) Introduccion: Place the question addressed in a broad context and highlight the purpose of the study; 2) Materiales y mètodos: Describe briefly the main methods or treatments applied; 3) Caso de estudio: Summarize the article's main findings; and 4) Discusion final y conclusiones: Indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.
 # back matter
 keywords: |
   keyword 1; keyword 2; keyword 3 (list three to ten pertinent keywords specific 
@@ -139,7 +141,7 @@ output:
 
 # Version
 
-This Rmd-skeleton uses the mdpi Latex template published 2023-03-25. 
+This Rmd-skeleton uses the mdpi Latex template published 2024-04-27. 
 However, the official template gets more frequently updated than the **rticles**
 package. Therefore, please make sure prior to paper submission, that you're 
 using the most recent .cls, .tex and .bst files 
@@ -252,191 +254,41 @@ knitr::kable(rticles::string_to_table(mdpi_journals, 8),
 \finishlandscape
 
 
+# A PARTIR DE ACA ES EL TRABAJO
 
 
 # Introducción
 
-  El presente informe tiene como objetivo utilizar las poderosas herramientas de análisis de datos proporcionadas por el lenguaje de programación R para procesar, analizar e interpretar los datos obtenidos durante una operación de well testing llevada a cabo durante un período de 8 días. Durante esta operación, se realizaron mediciones en boca de pozo, en el separador de control y se registraron los caudales de producción, con el fin de evaluar la capacidad de producción y las características del yacimiento de un pozo específico.
+# Materiales y Métodos
 
-  El uso de R para el análisis de datos ofrece una serie de ventajas, incluyendo la capacidad de manipular grandes conjuntos de datos de manera eficiente, la disponibilidad de una amplia gama de paquetes y funciones especializadas para el análisis estadístico y la visualización de datos, así como la posibilidad de automatizar procesos repetitivos y complejos.
+## Datasets 
 
-  En este informe, se utilizarán técnicas de programación en R para procesar y limpiar los datos obtenidos durante la operación de well testing, así como para realizar análisis estadísticos y generar visualizaciones que ayuden a identificar tendencias, patrones y anomalías significativas en los datos. La interpretación de estos resultados permitirá una comprensión más profunda de la capacidad productiva del pozo, la presión y la composición del fluido producido, así como otras propiedades importantes del yacimiento.
+## Metodos utilizados
 
-  Se espera que el uso de las herramientas de R para el análisis de datos proporcione una mayor claridad y precisión en la interpretación de los resultados obtenidos durante la operación de well testing, lo que contribuirá a la toma de decisiones informadas sobre la gestión y optimización de la producción del pozo y el desarrollo futuro del yacimiento.
-
-# Materials and Methods
-
-Materials and Methods should be described with sufficient details to allow 
-others to replicate and build on published results. Please note that publication 
-of your manuscript implicates that you must make all materials, data, computer 
-code, and protocols associated with the publication available to readers. Please
-disclose at the submission stage any restrictions on the availability of 
-materials or information. New methods and protocols should be described in 
-detail while well-established methods can be briefly described and appropriately
-cited.
-
-## DataSet
-
-Los datos que usaremos para el aalisis deparametros 
-
-```{r}
-X37r37k[2, 2]
-```
-
-
-Research manuscripts reporting large datasets that are deposited in a publicly 
-available database should specify where the data have been deposited and provide
-the relevant accession numbers. If the accession numbers have not yet been
-obtained at the time of submission, please state that they will be provided
-during review. They must be provided prior to publication.
-
-Interventionary studies involving animals or humans, and other studies require
-ethical approval must list the authority that provided approval and the
-corresponding ethical approval code.
-
-# Results / Caso de Estudio
-
-mescla de metodos y dataset
-analisis
-
-This section may be divided by subheadings. It should provide a concise and
-precise description of the experimental results, their interpretation as well
-as the experimental conclusions that can be drawn.
+# Casos de estudio
 
 ## Subsection Heading Here
 
-Subsection text here.
-
 ### Subsubsection Heading Here
-
-Bulleted lists look like this:
 
 * First bullet
 * Second bullet
 * Third bullet
 
-Numbered lists can be added as follows:
-
 1. First item
 2. Second item
 3. Third item
 
-The text continues here.
 
 ## Figures, Tables and Schemes
 
-All figures and tables should be cited in the main text as Figure \ref{fig:fig1}, 
-\ref{tab:tab1}, etc. To get cross-reference to figure generated by R chunks 
-include the `\\label{}` tag in the `fig.cap` attribute of the R chunk: 
-`fig.cap = "Fancy Caption\\label{fig:plot}"`.
+## Formatting of Mathematical Components LO PONEMOS???
 
-```{r fig1, echo=FALSE, fig.width=3, fig.cap="A figure added with a code chunk.\\label{fig:fig1}"}
-x = rnorm(10)
-y = rnorm(10)
-plot(x, y)
-```
+# Interpretacion de los resultados
 
+# Conclusión y Discusión final
 
-When making tables using `kable`, it is suggested to use
-the `format="latex"` and `tabl.envir="table"` arguments
-to ensure table numbering and compatibility with the mdpi
-document class.
-
-```{r tab1, echo=FALSE}
-knitr::kable(mtcars[1:5, 1:3], format = "latex", 
-             booktabs = TRUE, 
-             caption = "This is a table caption. Tables should be placed in the 
-             main text near to the first time they are~cited.", 
-             align = 'ccc', centering = FALSE,
-             table.envir = "table", position = "H")
-```
+# Patents – Patentes – opcional?
 
 
 
-For a very wide table, landscape layouts are allowed.
-
-
-\startlandscape
-
-```{r tab2, echo=FALSE}
-df <- data.frame(`Title 1` = c("Entry 1", "Entry 2"),
-                 `Title 2` = c("Data", "Data"),
-                 `Title 3` = c("Data", "Data"),
-                 `Title 4` = c("This cell has some longer content that runs over
-                               two lines",
-                               "Data"))
-knitr::kable(df, format = "latex", 
-             booktabs = TRUE, 
-             caption = "This is a very wide table", 
-             align = 'ccc', centering = FALSE,
-             table.envir = "table", position = "H")
-```
-
-\finishlandscape
-
-## Formatting of Mathematical Components
-
-This is an example of an equation:
-
-$$
-a = 1.
-$$
-
-If you want numbered equations use Latex and wrap in the equation environment:
-
-\begin{equation}
-a = 1,
-\end{equation}
-
-the text following an equation need not be a new paragraph. Please punctuate 
-equations as regular text.
-
-```{comment}
-If the documentclass option "submit" is chosen, please insert a blank line before and after any math environment (equation and eqnarray environments). This ensures correct linenumbering. The blank line should be removed when the documentclass option is changed to "accept" because the text following an equation should not be a new paragraph.
-```
-
-This is the example 2 of equation:
-
-\begin{adjustwidth}{-\extralength}{0cm}
-\begin{equation}
-a = b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + 
-u + v + w + x + y + z
-\end{equation}
-\end{adjustwidth}
-
-Theorem-type environments (including propositions, lemmas, corollaries etc.) 
-can be formatted as follows:
-
-Example of a theorem:
-
-::: {.Theorem latex=true}
-Example text of a theorem
-:::
-
-The text continues here. Proofs must be formatted as follows:
-
-Example of a proof:
-
-::: {.proof latex="[Proof of Theorem1]"}
-Text of the proof. Note that the phrase ``of Theorem 1'' is optional if it is 
-clear which theorem is being referred to.
-:::
-
-The text continues here.
-
-# Interpretacion de Resultados
-
-Authors should discuss the results and how they can be interpreted in 
-perspective of previous studies and of the working hypotheses. The findings and 
-their implications should be discussed in the broadest context possible. Future 
-research directions may also be highlighted.
-
-# Discusion Final y Conclusion
-
-This section is not mandatory, but can be added to the manuscript if the
-discussion is unusually long or complex.
-
-# Patents
-
-This section is not mandatory, but may be added if there are patents resulting
-from the work reported in this manuscript.
