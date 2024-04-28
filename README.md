@@ -8,3 +8,5 @@
 * Jairo Sebastián Quiroga <jairosq91@gmail.com>
 
 * Daniela Márquez <danilalokags@gmail.com>
+
+* Germaine Andreau <cherandreau@gmail.com>
