@@ -8,7 +8,7 @@ author:
     affil: 2, \dagger, \ddagger
   - name: Daniela Verónica Marquez
     affil: 3, \dagger, \ddagger
-  - name: Jairo 
+  - name: Jairo Quiroga
     affil: 3, \dagger, \ddagger
   - name: Marcelo Gomez
     affil: 3, \dagger, \ddagger
