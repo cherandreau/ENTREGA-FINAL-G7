@@ -291,7 +291,7 @@ Archivo
 •	Histograma
 
 # Datasets 
-modidificaciones y consideraciones .....
+modificaciones y consideraciones .....
 
 Datos
 DATA SET  es Proveniente página del Pagina Gobierno PZ  -   https://www.argentina.gob.ar/economia/mineria/eiti-portal-de-transparencia-de-las-industrias-extractivas/produccion-de-petroleo#:~:text=noviembre%20y%20diciembre-,Seg%C3%BAn%20lo%20informado%20por%20la%20Secretar%C3%ADa%20de%20Energ%C3%ADa%2C%20para%20el,8%2C91%20millones%20de%20m3.
