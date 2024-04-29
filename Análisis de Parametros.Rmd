@@ -10,12 +10,6 @@ author:
     affil: 3, \dagger, \ddagger
   - name: Jairo Quiroga
     affil: 3, \dagger, \ddagger
-  - name: Marcelo Gomez
-    affil: 3, \dagger, \ddagger
-  - name: Facundo Chancel
-    affil: 3, \dagger, \ddagger
-  - name: Bruno Nicolás Chaves
-    affil: 3, \dagger, \ddagger
 
 
 affiliation:
