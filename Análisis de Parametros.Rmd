@@ -270,6 +270,31 @@ El presente informe tiene como objetivo utilizar las poderosas herramientas de a
 # Materiales y Métodos
 
 funciones......
+Bitácora
+Archivo
+•	N/a  lo convierten en 0
+•	Los data set para Análisis de parámetros 
+•	No tomamos los datos de la fila 2 y 3 porque tiene caracteres (Fecha/Hora)
+•	Convertimos matriz
+•	Hicimos el qploplot 
+•	Bloxplot (punto)
+•	Plot Sort
+•	Plot
+•	Histograma
+•	N/a  lo convierten en 0
+•	Los data set para Análisis de parámetros 
+•	No tomamos los datos de la fila 2 y 3 porque tiene caracteres (Fecha/Hora)
+•	Convertimos matriz
+•	Hicimos el qploplot 
+•	Bloxplot (punto)
+•	Plot Sort
+•	Plot
+•	Histograma
+•	Sumary 
+•	ColSums 
+•	Cargar librería ggpairs 
+•	Plot density
+•	Histograma
 
 # Datasets 
 modidificaciones y consideraciones .....
