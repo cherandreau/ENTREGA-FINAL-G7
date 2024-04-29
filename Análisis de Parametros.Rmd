@@ -311,7 +311,23 @@ A lo largo de este informe, se explorarán diferentes métodos de procesamiento 
 El caso de estudio presenta una oportunidad única para aplicar los conocimientos teóricos en un entorno práctico, utilizando herramientas y técnicas modernas de análisis de datos. Se espera que los hallazgos y las conclusiones resultantes contribuyan significativamente a la mejora de los procesos de producción en la industria de hidrocarburos, demostrando el valor agregado que proporciona el análisis de datos en la toma de decisiones estratégicas.
 
 
+## Librerias para el análisis de parametros
 
+```{r}
+library(pacman)
+p_load("readr")
+p_load("dplyr")
+p_load("ggplot2")
+```
+
+1- se armo una matrix con el dataset, a partir de la columna 4 hasta la 21 y teniendo en cuenta todas las filas.
+```{r}
+library(readr)
+parametros <- as.matrix(datasetf[ , 4:21])
+parametros
+```
+
+2- 
 
 ## Subsection Heading Here
 
