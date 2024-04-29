@@ -302,7 +302,15 @@ Yacimiento de Neuquén
 ## Metodos utilizados
 
 # Casos de estudio
-convinacion de datos y metodos...........
+El presente informe introduce un caso de estudio centrado en el empleo de métodos de procesamiento de datos en un conjunto de datos de producción. En un contexto donde la industria busca optimizar continuamente sus operaciones, el análisis de datos desempeña un papel crucial para identificar oportunidades de mejora, mitigar riesgos y aumentar la eficiencia en la producción de hidrocarburos.
+
+Este caso de estudio se enfoca en la aplicación de diversas técnicas de procesamiento de datos en un conjunto específico de datos de producción de un campo petrolero o gasífero. El objetivo principal es extraer conocimientos significativos y prácticos a partir de estos datos, con el fin de mejorar la toma de decisiones y el rendimiento operativo.
+
+A lo largo de este informe, se explorarán diferentes métodos de procesamiento de datos, que van desde la limpieza y preparación inicial de los datos hasta técnicas más avanzadas de análisis y modelado. Se abordarán aspectos como la detección de datos anómalos, la identificación de tendencias, la correlación entre variables y la predicción de la producción futura.
+
+El caso de estudio presenta una oportunidad única para aplicar los conocimientos teóricos en un entorno práctico, utilizando herramientas y técnicas modernas de análisis de datos. Se espera que los hallazgos y las conclusiones resultantes contribuyan significativamente a la mejora de los procesos de producción en la industria de hidrocarburos, demostrando el valor agregado que proporciona el análisis de datos en la toma de decisiones estratégicas.
+
+
 
 
 ## Subsection Heading Here
