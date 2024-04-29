@@ -213,7 +213,7 @@ A lo largo de este informe, se explorarán diferentes métodos de procesamiento 
 El caso de estudio presenta una oportunidad única para aplicar los conocimientos teóricos en un entorno práctico, utilizando herramientas y técnicas modernas de análisis de datos. Se espera que los hallazgos y las conclusiones resultantes contribuyan significativamente a la mejora de los procesos de producción en la industria de hidrocarburos, demostrando el valor agregado que proporciona el análisis de datos en la toma de decisiones estratégicas.
 
 
-## Análisis de parametros a parir de Metodos en R.
+## Análisis de parámetros a partir de Métodos en R.
 
 ```{r}
 library(pacman)
@@ -223,21 +223,22 @@ p_load("ggplot2")
 
 ```
 
-1- se armo una matrix con el dataset, a partir de la columna 4 hasta la 21 y teniendo en cuenta todas las filas.
-Observacion: los elementos de la columna 2 y 3 son tipo caracter y al comvertir todo el dataset a matrix se convertian todos los elementos a caracter.
+1- Se armó una matriz con el dataset, a partir de la columna 4 hasta la 21 y teniendo en cuenta todas las filas.
+Observación: Los elementos de la columna 2 y 3 son de tipo character y al convertir todo el dataset a matriz se convertían todos los elementos a character, por lo cual se eliminaron las columnas 2 y 3.
+
 
 ```{r}
 library(readr)
 parametros <- as.matrix( datasetTF[ , 4:20])
 parametros
 ```
-2- se grafico con la funcion "qplot" los columnas 5 y 6 que corresponden a los datos de caudal de gas y caudal de petroleo respectivamente.
+2- Se graficó con la función "qplot" , las columnas 5 y 6 que corresponden a los datos de caudal de gas y caudal de petróleo respectivamente.
 
 ```{r}
 qplot(parametros[ , 5], parametros[ , 6], main= "Caudal de Gas vs Caudal de Petroleo",xlab="Gas", ylab= "Po")
 ```
 
-3- mediante los graficos de cajas con la funcion "boxplot" se comparo los diferentes caudales produccion.
+3- Mediante los gráficos de cajas con la función "boxplot" se comparó los diferentes caudales producción.
 
 ```{r}
 boxplot(parametros[6:8, 5:7], 
@@ -252,33 +253,33 @@ boxplot(parametros[6:8, 5:7],
         )
 ```
 
-4- A partir de la funcion "plot(sort..." se represento el caudal total de produccion de forma ordenada.
+4- A partir de la función "plot(sort..." se representó el caudal total de producción de forma ordenada.
 
 ```{r}
 plot (sort(parametros[ , 8]), main= "Caudal Total",xlab="Valores", ylab= "Caudal")
 ```
 
-5- A partir de la funcion "plot" se represento el caudal total de produccion de la forma que se fueron tomando los registros.
+5- A partir de la función "plot" se representó el caudal total de producción de la forma que se fueron tomando los registros.
 
 ```{r}
 plot(parametros[ , 8], main = "Caudal Total",xlab = "Valores",ylab="metros cubicos", type="b", col="blue")
 
 ```
 
-6- se utizo la funcion head() para mostrar las primeras filas del conjunto de datos (parametros), como un data frame. y luego se realizo un histograma con los valores obtenidos.
+6- Se utilizó la función head() para mostrar las primeras filas del conjunto de datos (parametros), como un data frame y luego se realizó un histograma con los valores obtenidos.
 
 ```{r}
 head(parametros, n= 3)
 hist(head(parametros), breaks = 100)
 ```
 
-7- a partir de la funcion summary() se obtiene un resumen estadistico, donde se genero un resumen para cada columna del conjunto de datos.
+7- A partir de la función summary() se obtiene un resumen estadistico, donde se generó un resumen para cada columna del conjunto de datos.
 
 ```{r}
 summary(parametros)
 ```
 
-8- La función colSums() utilizo para calcular la suma de las columnas del data frame y se obtuvo un vector final que contiene los diferentes resultados.
+8- La función colSums() se utilizó para calcular la suma de las columnas del data frame y se obtuvo un vector final que contiene los diferentes resultados.
 
 ```{r}
 colSums(parametros)
@@ -290,25 +291,25 @@ install.packages("GGally")
 library("GGally")
 ```
 
-9- ggpairs es una función del paquete GGally que proporciona una manera conveniente de crear una matriz de gráficos de dispersión y gráficos de densidad para todas las combinaciones de variables del data frame. Estos gráficos permiten visualizar las relaciones entre las variables y las distribuciones de cada una.
+9- "ggpairs" es una función del paquete GGally que proporciona una manera conveniente de crear una matriz de gráficos de dispersión y gráficos de densidad para todas las combinaciones de variables del data frame. Estos gráficos permiten visualizar las relaciones entre las variables y las distribuciones de cada una.
 
 ```{r}
 ggpairs (parametros)
 ```
 
-10- grafico de densidad, el cual puede aplicarse a las direntes columnas y en este ejemplo se usa en la culumna 7 que corresponde al caudal de agua.
+10- Se realizó un gráfico de densidad, el cual puede aplicarse a las diferentes columnas y en este ejemplo se usa en la culumna 7 que corresponde al caudal de agua.
 
 ```{r}
 plot(density(parametros[ , 7]), main= "grafico de densidad", xlab = "presion", ylab = "cantidad")
 ```
 
-11- grafico de histograma representa la distribución de datos numéricos. Consiste en un conjunto de barras adyacentes, donde la longitud de cada barra representa la frecuencia o la densidad de ocurrencia de valores dentro de un intervalo específico.
+11- Gráfico de histograma representa la distribución de datos numéricos. Consiste en un conjunto de barras adyacentes, donde la longitud de cada barra representa la frecuencia o la densidad de ocurrencia de valores dentro de un intervalo específico.
 
 ```{r}
 hist(parametros[ , 2], breaks = 10, main= "Histograma", xlab = "presion", ylab = "cantidad")
 ```
 
-12- otra forma de visualizacion de datos.
+12- Otra forma de visualizar datos es con la función plot() ,usada de manera general para crear gráficos.
 
 ```{r}
 plot(parametros[ , 1:2],main = "Resumen de Casos",xlab = "Ficha Bateria",ylab="Edad", type="b", col="RED")
