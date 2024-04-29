@@ -33,15 +33,16 @@ journal: notspecified
 type: article
 status: submit
 # front matter
+
 simplesummary: |
- Esta investigacion trata sobre HC NC y C
+ Trata sobre un trabajo final del tercer módulo de la Diplomatura de Hidrocarburos de la UNPA UACO.
 abstract: |
- 200 words
+ En el trabajo se utilizaron distintas funciones de R para analizar un dataset de parámetros de Well Testing realizado en Neuquén.
  
 # back matter
 keywords: |
-  keyword 1; keyword 2; keyword 3 (list three to ten pertinent keywords specific 
-  to the article, yet reasonably common within the subject discipline.).
+  well testing; parámetros de producción; funciones en R; oil & gas; hidrocarburos no convencionales
+
 acknowledgement: |
   All sources of funding of the study should be disclosed. Please clearly 
   indicate grants that you have received in support of your research work. 
@@ -138,20 +139,6 @@ using the most recent .cls, .tex and .bst files
 (available [here](http://www.mdpi.com/authors/latex)).
 
 
-
-# ESTA PARTE DE SUMARY DESPUES HAY Q METERLA ARRIBA, VA ARRIBA
-
-simplesummary: |
- Esta investigacion trata sobre HC NC y C
-abstract: |
- 200 words
- 
-# back matter
-keywords: |
-  agua; presión; oil; salinidad; gas; GOR; GLP; temperature
-
-
-# ACA ARRANCAMOSSS
 
 # Introducción
 
@@ -312,7 +299,7 @@ hist(parametros[ , 2], breaks = 10, main= "Histograma", xlab = "presion", ylab =
 12- Otra forma de visualizar datos es con la función plot() ,usada de manera general para crear gráficos.
 
 ```{r}
-plot(parametros[ , 1:2],main = "Resumen de Casos",xlab = "Ficha Bateria",ylab="Edad", type="b", col="RED")
+plot(parametros[ , 2:3],main = "Presion y temperatura ",xlab = "presion",ylab="temperatura", type="b", col="RED")
 ```
 
 
@@ -332,10 +319,12 @@ plot(parametros[ , 1:2],main = "Resumen de Casos",xlab = "Ficha Bateria",ylab="E
 ## Figuras y tablas.
 
 # Interpretacion de los resultados
+
 La interpretacion que realizamos es de un pozo, su comportamiento en el control produccion en un lapso de x dias.
 En los graficos podemos observar como en orificio de 6",8 "10" "12" "14" 16" y en los 8 dias.
 
 # Conclusión y Discusión final
+
 Hipotesis de que no se pudo tejer, si bien se realizaron de 0 ,entendiendo que pudo pasar por la version del Excel.
 
 
