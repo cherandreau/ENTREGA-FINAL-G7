@@ -347,7 +347,7 @@ parametros
 ## Formatting of Mathematical Components LO PONEMOS???
 
 # Interpretacion de los resultados
-La interpretacion que realizamos del pozo es de analizar el comportamiento del pozos en un lapso de x dias
+La interpretacion que realizamos es de un pozo, su comportamiento en el control produccion en un lapso de x dias.
 
 # Conclusión y Discusión final
 .................
