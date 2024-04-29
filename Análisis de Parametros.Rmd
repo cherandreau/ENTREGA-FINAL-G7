@@ -177,20 +177,17 @@ Utilizamos las siguientes funciones:
 
 # Datasets 
 
-Datos
-DATA SET  es Proveniente página del Pagina Gobierno PZ  -   https://www.argentina.gob.ar/economia/mineria/eiti-portal-de-transparencia-de-las-industrias-extractivas/produccion-de-petroleo#:~:text=noviembre%20y%20diciembre-,Seg%C3%BAn%20lo%20informado%20por%20la%20Secretar%C3%ADa%20de%20Energ%C3%ADa%2C%20para%20el,8%2C91%20millones%20de%20m3.
+El DATA SET  es Proveniente página del Pagina Gobierno PZ  -   https://www.argentina.gob.ar/economia/mineria/eiti-portal-de-transparencia-de-las-industrias-extractivas/produccion-de-petroleo#:~:text=noviembre%20y%20diciembre-,Seg%C3%BAn%20lo%20informado%20por%20la%20Secretar%C3%ADa%20de%20Energ%C3%ADa%2C%20para%20el,8%2C91%20millones%20de%20m3.
 Equipo: UMM 1018 – ST 1015
 Ensayo de Well Testing 
 Yacimiento de Neuquén
 
-## Metodos utilizados
 
 # Casos de estudio
-El presente informe introduce un caso de estudio centrado en el empleo de métodos de procesamiento de datos en un conjunto de datos de producción. En un contexto donde la industria busca optimizar continuamente sus operaciones, el análisis de datos desempeña un papel crucial para identificar oportunidades de mejora, mitigar riesgos y aumentar la eficiencia en la producción de hidrocarburos.
 
-Este caso de estudio se enfoca en la aplicación de diversas técnicas de procesamiento de datos en un conjunto específico de datos de producción de un campo petrolero o gasífero. El objetivo principal es extraer conocimientos significativos y prácticos a partir de estos datos, con el fin de mejorar la toma de decisiones y el rendimiento operativo.
+Este caso de estudio se enfoca en la aplicación de diversas técnicas de procesamiento de información en un conjunto específico de datos de producción de un campo petrolero . El objetivo principal es extraer conocimientos significativos y prácticos a partir de estos datos, con el fin de mejorar la toma de decisiones y el rendimiento operativo.
 
-A lo largo de este informe, se explorarán diferentes métodos de procesamiento de datos, que van desde la limpieza y preparación inicial de los datos hasta técnicas más avanzadas de análisis y modelado. Se abordarán aspectos como la detección de datos anómalos, la identificación de tendencias, la correlación entre variables y la predicción de la producción futura.
+A lo largo de este informe, se explorarán diferentes métodos de procesamiento de datos, que van desde la limpieza y preparación inicial de los datos hasta técnicas más avanzadas de análisis y modelado. Se abordarán aspectos como la detección de datos anómalos (los N/A), la identificación de tendencias, la correlación entre variables y la predicción de la producción futura.
 
 El caso de estudio presenta una oportunidad única para aplicar los conocimientos teóricos en un entorno práctico, utilizando herramientas y técnicas modernas de análisis de datos. Se espera que los hallazgos y las conclusiones resultantes contribuyan significativamente a la mejora de los procesos de producción en la industria de hidrocarburos, demostrando el valor agregado que proporciona el análisis de datos en la toma de decisiones estratégicas.
 
@@ -206,14 +203,13 @@ p_load("ggplot2")
 ```
 
 1- Se armó una matriz con el dataset, a partir de la columna 4 hasta la 21 y teniendo en cuenta todas las filas.
-Observación: Los elementos de la columna 2 y 3 son de tipo character y al convertir todo el dataset a matriz se convertían todos los elementos a character, por lo cual se eliminaron las columnas 2 y 3.
-
 
 ```{r}
 library(readr)
 parametros <- as.matrix( datasetTF[ , 4:20])
 parametros
 ```
+
 2- Se graficó con la función "qplot" , las columnas 5 y 6 que corresponden a los datos de caudal de gas y caudal de petróleo respectivamente.
 
 ```{r}
@@ -291,34 +287,13 @@ plot(density(parametros[ , 7]), main= "grafico de densidad", xlab = "presion", y
 hist(parametros[ , 2], breaks = 10, main= "Histograma", xlab = "presion", ylab = "cantidad")
 ```
 
-12- Otra forma de visualizar datos es con la función plot() ,usada de manera general para crear gráficos.
 
-```{r}
-plot(parametros[ , 2:3],main = "Presion y temperatura ",xlab = "presion",ylab="temperatura", type="b", col="RED")
-```
+# Interpretacion de los resultados HACERRRRR
 
+La interpretación que realizamos es de un pozo, su comportamiento en el control producción en un lapso de 8 dias.
+En los gráficos podemos observar como en orificio de 6",8 "10" "12" "14" 16" y en los 8 dias.
 
-## Subsection Heading Here
-
-### Subsubsection Heading Here
-
-* First bullet
-* Second bullet
-* Third bullet
-
-1. First item
-2. Second item
-3. Third item
-
-
-## Figuras y tablas.
-
-# Interpretacion de los resultados
-
-La interpretacion que realizamos es de un pozo, su comportamiento en el control produccion en un lapso de x dias.
-En los graficos podemos observar como en orificio de 6",8 "10" "12" "14" 16" y en los 8 dias.
-
-# Conclusión y Discusión final
+# Conclusión y Discusión final HACERRRRR
 
 Hipotesis de que no se pudo tejer, si bien se realizaron de 0 ,entendiendo que pudo pasar por la version del Excel.
 
