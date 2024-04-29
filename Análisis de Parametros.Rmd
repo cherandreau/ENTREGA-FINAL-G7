@@ -139,7 +139,6 @@ using the most recent .cls, .tex and .bst files
 (available [here](http://www.mdpi.com/authors/latex)).
 
 
-
 # Introducción
 
 El presente informe tiene como objetivo utilizar las poderosas herramientas de análisis de datos proporcionadas por el lenguaje de programación R para procesar, analizar e interpretar los datos obtenidos durante una operación de well testing llevada a cabo durante un período de 8 días. Durante esta operación, se realizaron mediciones en boca de pozo, en el separador de control y se registraron los caudales de producción, con el fin de evaluar la capacidad de producción y las características del yacimiento de un pozo específico.
@@ -152,35 +151,31 @@ El presente informe tiene como objetivo utilizar las poderosas herramientas de a
 
 # Materiales y Métodos
 
-funciones......
-Bitácora
-Archivo
-•	N/a  lo convierten en 0
-•	Los data set para Análisis de parámetros 
-•	No tomamos los datos de la fila 2 y 3 porque tiene caracteres (Fecha/Hora)
-•	Convertimos matriz
-•	Hicimos el qploplot 
-•	Bloxplot (punto)
-•	Plot Sort
+• Los N/A fueron convertidos en 0.
+• Usamos un data set para Análisis de parámetros de producción.
+•	No tomamos los datos de las filas 1, 2 y 3 porque tienen formato de caracteres (Fecha/Hora)
+•	Convertimos el dataset a matriz.
+
+Cargamos las siguientes library:  
+• GGally
+• pacman
+• readr
+• dplyr
+• ggplot2
+
+Utilizamos las siguientes funciones:
+• qplot 
+•	Boxplot
+•	Plot(Sort)
 •	Plot
-•	Histograma
-•	N/a  lo convierten en 0
-•	Los data set para Análisis de parámetros 
-•	No tomamos los datos de la fila 2 y 3 porque tiene caracteres (Fecha/Hora)
-•	Convertimos matriz
-•	Hicimos el qploplot 
-•	Bloxplot (punto)
-•	Plot Sort
-•	Plot
-•	Histograma
-•	Sumary 
+•	Hist
+•	Summary 
 •	ColSums 
-•	Cargar librería ggpairs 
+• ggpairs
 •	Plot density
-•	Histograma
+
 
 # Datasets 
-modificaciones y consideraciones .....
 
 Datos
 DATA SET  es Proveniente página del Pagina Gobierno PZ  -   https://www.argentina.gob.ar/economia/mineria/eiti-portal-de-transparencia-de-las-industrias-extractivas/produccion-de-petroleo#:~:text=noviembre%20y%20diciembre-,Seg%C3%BAn%20lo%20informado%20por%20la%20Secretar%C3%ADa%20de%20Energ%C3%ADa%2C%20para%20el,8%2C91%20millones%20de%20m3.
