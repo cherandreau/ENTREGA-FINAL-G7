@@ -319,23 +319,107 @@ A lo largo de este informe, se explorarán diferentes métodos de procesamiento 
 El caso de estudio presenta una oportunidad única para aplicar los conocimientos teóricos en un entorno práctico, utilizando herramientas y técnicas modernas de análisis de datos. Se espera que los hallazgos y las conclusiones resultantes contribuyan significativamente a la mejora de los procesos de producción en la industria de hidrocarburos, demostrando el valor agregado que proporciona el análisis de datos en la toma de decisiones estratégicas.
 
 
-## Librerias para el análisis de parametros
+## Análisis de parametros a parir de Metodos en R.
 
 ```{r}
 library(pacman)
 p_load("readr")
 p_load("dplyr")
 p_load("ggplot2")
+
 ```
 
 1- se armo una matrix con el dataset, a partir de la columna 4 hasta la 21 y teniendo en cuenta todas las filas.
+Observacion: los elementos de la columna 2 y 3 son tipo caracter y al comvertir todo el dataset a matrix se convertian todos los elementos a caracter.
+
 ```{r}
 library(readr)
-parametros <- as.matrix(datasetf[ , 4:21])
+parametros <- as.matrix( datasetTF[ , 4:20])
 parametros
 ```
+2- se grafico con la funcion "qplot" los columnas 5 y 6 que corresponden a los datos de caudal de gas y caudal de petroleo respectivamente.
 
-2- 
+```{r}
+qplot(parametros[ , 5], parametros[ , 6], main= "Caudal de Gas vs Caudal de Petroleo",xlab="Gas", ylab= "Po")
+```
+
+3- mediante los graficos de cajas con la funcion "boxplot" se comparo los diferentes caudales produccion.
+
+```{r}
+boxplot(parametros[6:8, 5:7], 
+        main="Boxplot del grupo 7",
+        xlab="Valores",
+        ylab="Caudales",
+        col="skyblue",  # Cambiar el color de los boxes
+        border="blue",  # Cambiar el color de los bordes
+        notch=TRUE,     # Agregar notch para mostrar la mediana
+        notchwidth=0.6, # Ancho de la notch
+        horizontal=TRUE # Mostrar el boxplot en horizontal
+        )
+```
+
+4- A partir de la funcion "plot(sort..." se represento el caudal total de produccion de forma ordenada.
+
+```{r}
+plot (sort(parametros[ , 8]), main= "Caudal Total",xlab="Valores", ylab= "Caudal")
+```
+
+5- A partir de la funcion "plot" se represento el caudal total de produccion de la forma que se fueron tomando los registros.
+
+```{r}
+plot(parametros[ , 8], main = "Caudal Total",xlab = "Valores",ylab="metros cubicos", type="b", col="blue")
+
+```
+
+6- se utizo la funcion head() para mostrar las primeras filas del conjunto de datos (parametros), como un data frame. y luego se realizo un histograma con los valores obtenidos.
+
+```{r}
+head(parametros, n= 3)
+hist(head(parametros), breaks = 100)
+```
+
+7- a partir de la funcion summary() se obtiene un resumen estadistico, donde se genero un resumen para cada columna del conjunto de datos.
+
+```{r}
+summary(parametros)
+```
+
+8- La función colSums() utilizo para calcular la suma de las columnas del data frame y se obtuvo un vector final que contiene los diferentes resultados.
+
+```{r}
+colSums(parametros)
+
+```
+
+```{r}
+install.packages("GGally")
+library("GGally")
+```
+
+9- ggpairs es una función del paquete GGally que proporciona una manera conveniente de crear una matriz de gráficos de dispersión y gráficos de densidad para todas las combinaciones de variables del data frame. Estos gráficos permiten visualizar las relaciones entre las variables y las distribuciones de cada una.
+
+```{r}
+ggpairs (parametros)
+```
+
+10- grafico de densidad, el cual puede aplicarse a las direntes columnas y en este ejemplo se usa en la culumna 7 que corresponde al caudal de agua.
+
+```{r}
+plot(density(parametros[ , 7]), main= "grafico de densidad", xlab = "presion", ylab = "cantidad")
+```
+
+11- grafico de histograma representa la distribución de datos numéricos. Consiste en un conjunto de barras adyacentes, donde la longitud de cada barra representa la frecuencia o la densidad de ocurrencia de valores dentro de un intervalo específico.
+
+```{r}
+hist(parametros[ , 2], breaks = 10, main= "Histograma", xlab = "presion", ylab = "cantidad")
+```
+
+12- otra forma de visualizacion de datos.
+
+```{r}
+plot(parametros[ , 1:2],main = "Resumen de Casos",xlab = "Ficha Bateria",ylab="Edad", type="b", col="RED")
+```
+
 
 ## Subsection Heading Here
 
