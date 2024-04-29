@@ -10,3 +10,5 @@
 * Daniela Márquez <danilalokags@gmail.com>
 
 * Germaine Andreau <cherandreau@gmail.com>
+
+* Angeles Chocala <angeles.chocala@gmail.com>
