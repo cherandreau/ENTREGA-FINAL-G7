@@ -1,28 +1,26 @@
 ---
-title: TRABAJO FINAL M3  - GRUPO 7 
+title: TRABAJO FINAL M3  - GRUPO 7
 author:
   - name: Germaine Andreau
-    affil: 1,2,3\ddagger,*
+    affil: 1,2,\ddagger,*
     orcid: 0000-0000-0000-0000
   - name: Angeles Chocala
     affil: 2, \dagger, \ddagger
   - name: Daniela Verónica Marquez
     affil: 3, \dagger, \ddagger
   - name: Jairo Quiroga
-    affil: 3, \dagger, \ddagger
- 
-
+    affil: 4, \dagger, \ddagger
 affiliation:
   - num: 1
     address: |
       Universidad Nacional de la Patagonia Austral 
-      Unidad Académica Caleta Olivia, Diplomatura en Hidrocarburos
+      Unidad Academica Caleta Olivia, Diplomatura en Hidrocarburos
       Santa Cruz , Argentina
-  - num: 2
-     email: cherandreau@gmail.com
+    email: cherandreau@gmail.com
+
 # author citation list in chicago format
 authorcitation: |
-  Leutnant, D.; Doe, J.
+  Leutnant, D.; Doe, J
 # firstnote to eighthnote
 firstnote: |
   Current address: Chubut, Argentina.
@@ -36,12 +34,10 @@ type: article
 status: submit
 # front matter
 simplesummary: |
-  El siguiente trabajo es el producto de la finalización del tercer módulo de la Diplomatura de Hidrocarburos de la UNPA.
+ Esta investigacion trata sobre HC NC y C
 abstract: |
-  A single paragraph of about 200 words maximum. For research articles, 
-  abstracts should give a pertinent overview of the work. We strongly encourage
-  authors to use the following style of structured abstracts, but without 
-  headings: 1) Introduccion: Place the question addressed in a broad context and highlight the purpose of the study; 2) Materiales y mètodos: Describe briefly the main methods or treatments applied; 3) Caso de estudio: Summarize the article's main findings; and 4) Discusion final y conclusiones: Indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.
+ 200 words
+ 
 # back matter
 keywords: |
   keyword 1; keyword 2; keyword 3 (list three to ten pertinent keywords specific 
@@ -135,120 +131,15 @@ output:
 
 # Version
 
-This Rmd-skeleton uses the mdpi Latex template published 2024-04-27. 
+This Rmd-skeleton uses the mdpi Latex template published 2024-04-29. 
 However, the official template gets more frequently updated than the **rticles**
 package. Therefore, please make sure prior to paper submission, that you're 
 using the most recent .cls, .tex and .bst files 
 (available [here](http://www.mdpi.com/authors/latex)).
 
-# Article Header Information
-
-The YAML header includes information needed mainly for formatting the front and 
-back matter of the article. Required elements include:
-
-```yaml
-title: Title of the paper
-author:
-  - name: first and last name
-    affil: |
-      One or more comma seperated numbers corresponding to affilitation
-      and one or more  comma seperated symbols corresponding 
-      optional notes.
-    orcid: optional orcid number
-affiliation:  
-  - num: 1,..., n for each affiliation
-    address: required
-    email: required
-authorcitation: |
-  Lastname, F.
-correspondence: |
-  email@email.com; Tel.: +XX-000-00-0000.
-journal: notspecified
-type: article
-status: submit
-```
-
-Journal options are in Table \ref{tab:mdpinames}. The `status` variable should 
-generally not be changed by authors. The `type` variable describes 
-the type of of submission and defaults to `article` but can be replaced with any of the ones in Table \ref{tab:mdpitype}
-
-```{r mdpitype, echo = FALSE}
-type <- c("abstract, addendum, article, book, bookreview, briefreport, 
-casereport, comment, commentary, communication, conferenceproceedings, 
-correction, conferencereport, entry, expressionofconcern, extendedabstract, 
-datadescriptor, editorial, essay, erratum, hypothesis, interestingimage, 
-obituary, opinion, projectreport, reply, retraction, review, perspective, 
-protocol, shortnote, studyprotocol, systematicreview, supfile, 
-technicalnote, viewpoint, guidelines, registeredreport, tutorial")
-knitr::kable(rticles::string_to_table(type, 3), 
-             col.names = NULL, format = "latex", booktab = TRUE, 
-             caption = "MDPI article types.")
-```
-
-## Journal Specific YAML variables
-
-```yaml
-# for journal Diversity,
-# add the Life Science Identifier using:
-lsid: http://zoobank.org/urn:lsid:zoobank.org:act:nnnn
 
 
-# for journal Applied Sciences
-# add featured application
-featuredapplication: |
-  Authors are encouraged to provide a concise 
-  description of the specific application or 
-  a potential application of the work. This 
-  section is not mandatory.
-
-# for the journal Data
-# add dataset doi and license
-dataset: https://doi.org/10.1000/182
-datasetlicense: CC-BY-4.0
-
-# for the journal Toxins
-# add key contributions
-keycontributions: |
-  The breakthroughs or highlights of the manuscript. 
-  Authors can write one or two sentences to describe 
-  the most important part of the paper.
-
-# for the journal Encyclopedia
-encyclopediadef: |
-  For entry manuscripts only: please provide a brief overview
-  of the entry title instead of an abstract.
-entrylink: The Link to this entry published on the encyclopedia platform.
-
-# for the journal Advances in Respiratory Medicine
-# add highlights
-addhighlights: |
-  This is an obligatory section in “Advances in Respiratory Medicine”, 
-  whose goal is to increase the discoverability and readability of the
-  article via search engines and other scholars. Highlights should not 
-  be a copy of the abstract, but a simple text allowing the reader to 
-  quickly and simplified find out what the article is about and what can 
-  be cited from it. Each of these parts should be devoted up to 2~bullet 
-  points.
-
-```
-
-
-\startlandscape
-```{r, mdpinames, echo=FALSE, results='asis'}
-mdpi_journals <- "acoustics, actuators, addictions, admsci, adolescents, aerobiology, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, air, algorithms, allergies, alloys, analytica, analytics, anatomia, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, applmech, applmicrobiol, applnano, applsci, aquacj, architecture, arm, arthropoda, arts, asc, asi, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, behavsci, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, biosensors, biotech, birds, bloods, blsf, brainsci, breath, buildings, businesses, cancers, carbon, cardiogenetics, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinpract, clockssleep, cmd, coasts, coatings, colloids, colorants, commodities, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryptography, crystals, csmf, ctn, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecologies, econometrics, economies, education, ejihpe, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, entomology, entropy, environments, environsciproc, epidemiologia, epigenomes, est, fermentation, fibers, fintech, fire, fishes, fluids, foods, forecasting, forensicsci, forests, foundations, fractalfract, fuels, future, futureinternet, futurepharmacol, futurephys, futuretransp, galaxies, games, gases, gastroent, gastrointestdisord, gels, genealogy, genes, geographies, geohazards, geomatics, geosciences, geotechnics, geriatrics, grasses, gucdd, hazardousmatters, healthcare, hearts, hemato, hematolrep, heritage, higheredu, highthroughput, histories, horticulturae, hospitals, humanities, humans, hydrobiology, hydrogen, hydrology, hygiene, idr, ijerph, ijfs, ijgi, ijms, ijns, ijpb, ijtm, ijtpp, ime, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jal, jcdd, jcm, jcp, jcs, jcto, jdb, jeta, jfb, jfmk, jimaging, jintelligence, jlpea, jmmp, jmp, jmse, jne, jnt, jof, joitmc, jor, journalmedia, jox, jpm, jrfm, jsan, jtaer, jvd, jzbg, kidneydial, kinasesphosphatases, knowledge, land, languages, laws, life, liquids, literature, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrology, micro, microarrays, microbiolres, micromachines, microorganisms, microplastics, minerals, mining, modelling, molbank, molecules, mps, msf, mti, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neurolint, neurosci, nitrogen, notspecified, nri, nursrep, nutraceuticals, nutrients, obesities, oceans, ohbm, onco, oncopathology, optics, oral, organics, organoids, osteology, oxygen, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, philosophies, photochem, photonics, phycology, physchem, physics, physiologia, plants, plasma, platforms, pollutants, polymers, polysaccharides, poultry, powders, preprints, proceedings, processes, prosthesis, proteomes, psf, psych, psychiatryint, psychoactives, publications, quantumrep, quaternary, qubs, radiation, reactions, receptors, recycling, regeneration, religions, remotesensing, reports, reprodmed, resources, rheumato, risks, robotics, ruminants, safety, sci, scipharm, sclerosis, seeds, sensors, separations, sexes, signals, sinusitis, skins, smartcities, sna, societies, socsci, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, stresses, surfaces, surgeries, suschem, sustainability, symmetry, synbio, systems, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, thermo, tomography, tourismhosp, toxics, toxins, transplantology, transportation, traumacare, traumas, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, virtualworlds, viruses, vision, waste, water, wem, wevj, wind, women, world, youth, zoonoticdis"
-
-knitr::kable(rticles::string_to_table(mdpi_journals, 8),
-             col.names = NULL,
-             format = "latex",
-             booktabs = TRUE, 
-             caption = "MDPI journal names.",
-             longtable = TRUE)
-
-```
-\finishlandscape
-
-
-# A PARTIR DE ACA ES EL TRABAJO
+# ESTA PARTE DE SUMARY DESPUES HAY Q METERLA ARRIBA, VA ARRIBA
 
 simplesummary: |
  Esta investigacion trata sobre HC NC y C
@@ -258,6 +149,9 @@ abstract: |
 # back matter
 keywords: |
   agua; presión; oil; salinidad; gas; GOR; GLP; temperature
+
+
+# ACA ARRANCAMOSSS
 
 # Introducción
 
@@ -434,17 +328,16 @@ plot(parametros[ , 1:2],main = "Resumen de Casos",xlab = "Ficha Bateria",ylab="E
 3. Third item
 
 
-## Figures, Tables and Schemes
-
-## Formatting of Mathematical Components LO PONEMOS???
+## Figuras y tablas.
 
 # Interpretacion de los resultados
 La interpretacion que realizamos es de un pozo, su comportamiento en el control produccion en un lapso de x dias.
 En los graficos podemos observar como en orificio de 6" a lo largo de 56 hs. la temperatura baja -24° (hidrata) despues de la placa orificio.
+
 # Conclusión y Discusión final
 Hipotesis de que no se pudo tejer, si bien se realizaron de 0 ,entendiendo que pudo pasar por la version del Excel.
 
-# Patents – Patentes – opcional?
+
 
 
 
