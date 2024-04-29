@@ -259,13 +259,26 @@ knitr::kable(rticles::string_to_table(mdpi_journals, 8),
 
 # Introducción
 
+El presente informe tiene como objetivo utilizar las poderosas herramientas de análisis de datos proporcionadas por el lenguaje de programación R para procesar, analizar e interpretar los datos obtenidos durante una operación de well testing llevada a cabo durante un período de 8 días. Durante esta operación, se realizaron mediciones en boca de pozo, en el separador de control y se registraron los caudales de producción, con el fin de evaluar la capacidad de producción y las características del yacimiento de un pozo específico.
+
+  El uso de R para el análisis de datos ofrece una serie de ventajas, incluyendo la capacidad de manipular grandes conjuntos de datos de manera eficiente, la disponibilidad de una amplia gama de paquetes y funciones especializadas para el análisis estadístico y la visualización de datos, así como la posibilidad de automatizar procesos repetitivos y complejos.
+
+  En este informe, se utilizarán técnicas de programación en R para procesar y limpiar los datos obtenidos durante la operación de well testing, así como para realizar análisis estadísticos y generar visualizaciones que ayuden a identificar tendencias, patrones y anomalías significativas en los datos. La interpretación de estos resultados permitirá una comprensión más profunda de la capacidad productiva del pozo, la presión y la composición del fluido producido, así como otras propiedades importantes del yacimiento.
+
+  Se espera que el uso de las herramientas de R para el análisis de datos proporcione una mayor claridad y precisión en la interpretación de los resultados obtenidos durante la operación de well testing, lo que contribuirá a la toma de decisiones informadas sobre la gestión y optimización de la producción del pozo y el desarrollo futuro del yacimiento.
+
 # Materiales y Métodos
 
-## Datasets 
+funciones......
+
+# Datasets 
+modidificaciones y consideraciones .....
 
 ## Metodos utilizados
 
 # Casos de estudio
+convinacion de datos y metodos...........
+
 
 ## Subsection Heading Here
 
@@ -285,8 +298,10 @@ knitr::kable(rticles::string_to_table(mdpi_journals, 8),
 ## Formatting of Mathematical Components LO PONEMOS???
 
 # Interpretacion de los resultados
+..............
 
 # Conclusión y Discusión final
+.................
 
 # Patents – Patentes – opcional?
 
