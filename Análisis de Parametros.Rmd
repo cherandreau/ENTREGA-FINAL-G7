@@ -250,6 +250,14 @@ knitr::kable(rticles::string_to_table(mdpi_journals, 8),
 
 # A PARTIR DE ACA ES EL TRABAJO
 
+simplesummary: |
+ Esta investigacion trata sobre HC NC y C
+abstract: |
+ 200 words
+ 
+# back matter
+keywords: |
+  agua; presión; oil; salinidad; gas; GOR; GLP; temperature
 
 # Introducción
 
