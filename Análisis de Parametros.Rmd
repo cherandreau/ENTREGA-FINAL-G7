@@ -288,15 +288,20 @@ hist(parametros[ , 2], breaks = 10, main= "Histograma", xlab = "presion", ylab =
 ```
 
 
-# Interpretacion de los resultados HACERRRRR
+# Interpretacion de los resultados 
 
-La interpretación que realizamos es de un pozo, su comportamiento en el control producción en un lapso de 8 dias.
-En los gráficos podemos observar como en orificio de 6",8 "10" "12" "14" 16" y en los 8 dias.
+La interpretación que realizamos es de los diferentes parametros del pozo Nq 1200 x-1 , el control de su producción en donde podemos observar diferentes variables de acuerdo a la temperatura, presion, caudal, placa orificio, % agua, etc. a través de los graficos
 
-# Conclusión y Discusión final HACERRRRR
+# Conclusión
 
-Hipotesis de que no se pudo tejer, si bien se realizaron de 0 ,entendiendo que pudo pasar por la version del Excel.
-
+En primera instancia unificamos el criterio de la base a utilizar, fuimos analizando los datos recopilados, realizando graficos en donde obtuvimos diferentes interpretaciones para análisis. Algunos gráficos proporcionaron informacion mas relevantes frente a otros. 
+Si bien no se pudo tejer (knit) se pudo realizar la corrida de los códigos en el panel principal.
+                                                                                           
+### Error: 
+! object 'datasetTF' not found
+Backtrace:
+ 1. base::as.matrix(datasetTF[, 4:20])
+Execution halted
 
 
 
